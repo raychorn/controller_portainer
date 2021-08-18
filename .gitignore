@@ -1,0 +1,17 @@
+docker/portainer_ce/.env
+docker/webdav/.env
+docker/pi-hole/etc-pihole/*
+docker/pi-hole/etc-dnsmasq.d/*
+docker/portainer_ce/swarm/controller/.env
+docker/portainer_ce/swarm/controller/PORT8000.env
+docker/portainer_ce/swarm/controller/PORT9000.env
+docker/portainer_ce/swarm/server-1/.env
+docker/portainer_ce/swarm/server-1/PORT8000.env
+docker/portainer_ce/swarm/server-1/PORT9000.env
+docker/ssh-box/workspaces/etc-ssh/ssh/ssh_host_*
+docker/ssh-box-farsana/workspaces/etc-ssh/ssh_host_*
+docker/ssh-box-farsana/workspaces/etc-ssh/ssh/ssh_host_*
+docker/ssh-box-radia/workspaces/etc-ssh/ssh_host_*
+docker/ssh-box-radia/workspaces/etc-ssh/ssh/ssh_host_*
+docker/ssh-box-rajesh/workspaces/etc-ssh/ssh_host_*
+docker/ssh-box-rajesh/workspaces/etc-ssh/ssh/ssh_host_*
