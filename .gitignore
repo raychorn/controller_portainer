@@ -15,3 +15,7 @@ docker/ssh-box-radia/workspaces/etc-ssh/ssh_host_*
 docker/ssh-box-radia/workspaces/etc-ssh/ssh/ssh_host_*
 docker/ssh-box-rajesh/workspaces/etc-ssh/ssh_host_*
 docker/ssh-box-rajesh/workspaces/etc-ssh/ssh/ssh_host_*
+mongodb5_cluster/deployer/nohup.err
+mongodb5_cluster/deployer/nohup.out
+mongodb5_cluster/deployer/nohup.err
+docker/webdav/PORTS.env
