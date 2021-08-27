@@ -16,8 +16,12 @@ services:
       DNS2: 1.1.1.1
     # Volumes store your data between container upgrades
     volumes:
-       - './etc-pihole/:/etc/pihole/'
-       - './etc-dnsmasq.d/:/etc/dnsmasq.d/'
+       #- './etc-pihole/:/etc/pihole/'
+       #- './etc-dnsmasq.d/:/etc/dnsmasq.d/'
+       - "etc_pihole:/etc/pihole/"
+       - "etc_dnsmasq_d:/etc/dnsmasq.d/"
+       - /var/run/docker.sock:/var/run/docker.sock
+       - /var/lib/docker/volumes:/var/lib/docker/volumes
     deploy:
       resources:
         limits:
@@ -32,4 +36,15 @@ services:
     #   https://github.com/pi-hole/docker-pi-hole#note-on-capabilities
     cap_add:
       - NET_ADMIN
+    tty: true
+    stdin_open: true
+    logging:
+        options:
+            max-size: 1g
     restart: unless-stopped
+
+volumes:
+  etc_pihole:
+    external: true
+  etc_dnsmasq_d:
+    external: true
