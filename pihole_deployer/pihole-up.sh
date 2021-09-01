@@ -43,7 +43,7 @@
 #    external: true
 
 
-docker run \
+docker run -d \
 --name=pihole \
 -e TZ=America/Denver \
 -e WEBPASSWORD=sisko@7660$boo \
