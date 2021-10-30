@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VENV=.venv
+VENV=venv
 REQS=./requirements.txt
 
 TARGET_PY="3.9"
